@@ -3,57 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Our custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+
+    <title>B.C. Event Star - Event Details</title>
 </head>
-<body class="bg-dark">
+<body class="bg-dark text-light">
+    <div class="container py-3" id="backgroundContainer">
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand site-logo" href="#">
-                <img src="img/EventStarLogo2x.png" alt="site logo">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Your Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Create an Event</a>
-                    </li>
-                </ul>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand site-logo" href="#">
+                    <img src="img/EventStarLogo2x.png" alt="site logo" class="col-6 img-fluid" >
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Your Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Create an Event</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="row">
+            <div class="col-6">
+                <img src="img/event-1.png" alt="Event Image" class="img-fluid">
             </div>
-        </nav>
-    </header>
-
-    <section class="row bg-dark main-section">
-        <div class="col-md-6">
-            <img src="img/event-1.jpg" alt="Event Image" class="img-fluid">
-        </div>
-        <div class="col-md-6 event-details-section">
-            <h1 class="event-title">The B.C. Halloween Festival</h1>
-            <h4 class="event-location">West Quad, B.C.</h4>
-            <h4 class="event-date">Friday, 10/27/23, 8:00pm</h4>
-            <div class="event-btns">
-                <button class="btn btn-primary interest-btn">I'm Interested</button>
-                <button class="btn btn-primary attending-btn">I'm Going</button>
+            <div class="col-6">
+                <h1 class="">The B.C. Halloween Festival</h1>
+                <h4 class="location">West Quad, B.C.</h4>
+                <h4 class="date">Friday, 10/27/23, 8:00pm</h4>
+                <button class="btn btn-outline-warning my-2">I'm Interested</button>
+                <button class="btn btn-outline-warning my-2">I'm Going</button>
+                
+                <h2 class="pt-3">About</h2>
+                <p class="mb-3">Dive into the night and party until sunrise with the best DJ’s in Brooklyn, on Brooklyn College’s West Quad. We have the best lineup of all the Halloween parties, spinning the best in old school hip hop, rap, and R&B. Also watch the best visuals in the house with Nullsleep and No Carrier projected on the walls of Roosevelt Hall and James Hall.</p>
             </div>
-            <h2 class="event-details-header">About</h2>
-            <p class="event-details">Dive into the night and party until sunrise with the best DJ’s in Brooklyn, on Brooklyn College’s West Quad. We have the best lineup of all the Halloween parties, spinning the best in old school hip hop, rap, and R&B. Also watch the best visuals in the house with Nullsleep and 
-                No Carrier projected on the walls of Roosevelt Hall and James Hall.</p>
-        </div>
-    </section>
+        </section>
 
-    <section class="row bg-dark related-events-section g-0">
-        <h4 class="related-events-title">Related Events</h4>
-        <div class="col-md-6 related-event">
-            <div class="event-container">
+        <section class="row">
+            <h4 class="col-12 my-3">Related Events</h4>
+            <div class="col-3">
                 <a href="#">
-                    <img src="img/event-6.png" alt="Related Event 1" class="related-event-img">
+                    <img src="img/event-6.png" alt="Related Event 1" class="img-fluid">
                 </a>
                 <div class="related-event-details">
                     <h5>The Rocky Horror Picture Show</h5>
@@ -61,26 +64,27 @@
                     <p class="date">11/16/23</p>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 related-event">
-            <div class="event-container">
+            <div class="col-3">
                 <a href="#">
-                    <img src="img/event-2.png" alt="Related Event 2" class="related-event-img">
+                    <img src="img/event-2.png" alt="Related Event 2" class="img-fluid">
                 </a>
                 <div class="related-event-details">
                     <h5>Bedford Ave Halloween</h5>
                     <p class="location">East Quad, B.C.</p>
                     <p class="date">10/27/23</p>
                 </div>
-            </div>
-        </div>
-    </section>    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+             </div>
+        </section>    
+ 
+        <footer class="bg-dark text-center text-white pt-5 pb-4">
+            <hr class="footer-divider">
+            <p>© 2023 B.C. Event Star. All events are property of their respective owners. We make no guarantee of the accuracy of event information. 
+                All info is subject to change. Lots more legal jargon. Good luck, have fun. Made in NYC. <a href="#" class="footer-link">Privacy Policy</a>.</p>
+        </footer>
+    </div>
 
-<footer class="bg-dark text-center text-white pt-5 pb-4">
-    <hr class="footer-divider">
-    <p>© 2023 B.C. Event Star. All events are property of their respective owners. We make no guarantee of the accuracy of event information. 
-        All info is subject to change. Lots more legal jargon. Good luck, have fun. Made in NYC. <a href="#" class="footer-link">Privacy Policy</a>.</p>
-</footer>
+    <!-- JavaScript at end of page -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
 </body>
 </html>
