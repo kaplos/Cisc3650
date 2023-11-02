@@ -9,18 +9,152 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	
 	<!-- Our CSS -->
-	<link href="css/index.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 
 	<title>B.C. Event Star - Event Board</title>
 </head>
-<body class="bg-dark">
+<body class="bg-dark text-light">
 	<div class="container py-3" id="backgroundContainer">
-	</div>
+		<!-- Nav Bar -->
+				<nav class="row mb-4">
+						<div class="col-md-6">
+								<a href="index.html">
+										<img src="img/EventStarLogo2x.png" alt="site logo" class="img-fluid" >
+								</a>
+						</div>
+						<div class="col-md-6">
+								<ul class="nav justify-content-end brand-nav-yellow">
+										<li class="nav-item">
+												<a class="nav-link" href="profile.html">Profile</a>
+										</li>
+										<li class="nav-item">
+												<a class="nav-link" href="your-events.html">Your Events</a>
+										</li>
+										<li class="nav-item">
+												<a class="nav-link" href="create-event.html">Create an Event</a>
+										</li>
+								</ul>
+						</div>
+				</nav>
 
-	
+				<!-- Events Section -->
+				<section class="row mb-4">
+					<div class="col-12 my-3 pb-3">Show: 
+						<div class="btn-group" role="group">
+							<input type="radio" class="btn-check" name="filter" id="filter1" autocomplete="off" checked>
+								<label class="btn btn-outline-warning" for="filter1">All</label>
+							<input type="radio" class="btn-check" name="filter" id="filter2" autocomplete="off" >
+								<label class="btn btn-outline-warning" for="filter2">Club</label>
+							<input type="radio" class="btn-check" name="filter" id="filter3" autocomplete="off" >
+								<label class="btn btn-outline-warning" for="filter3">Theater</label>
+							<input type="radio" class="btn-check" name="filter" id="filter4" autocomplete="off" >
+								<label class="btn btn-outline-warning" for="filter4">Music</label>
+							<input type="radio" class="btn-check" name="filter" id="filter5" autocomplete="off" >
+								<label class="btn btn-outline-warning" for="filter5">Recruiting</label>
+						</div>
+					</div>
+					
+					<!-- Event 1-->
+					<div class="col-6 col-md-4 col-xl-3 mb-4">
+						<a href="event-page-1.html">
+							<img src="img/event-1.png" alt="Event 1" class="img-fluid">
+						</a>
+						<div class="related-event-details">
+							<a href="#" class="no-underline">
+								<span class="brand-white">Anime Halloween Party</span><br>
+								<span class="brand-yellow">Student Center, 7th Floor</span><br>
+								<span class="brand-burgandy">10/31/23</span>
+							</a>
+						</div>
+					</div>
+					
+					<!-- Event 2-->
+					<div class="col-6 col-md-4 col-xl-3">
+						<a href="#">
+							<img src="img/event-2.png" alt="Event 2" class="img-fluid">
+						</a>
+						<div class="related-event-details">
+							<a href="#" class="no-underline">
+								<span class="brand-white">Event 2</span><br>
+								<span class="brand-yellow">Location 2</span><br>
+								<span class="brand-burgandy">11/7/23</span>
+							</a>
+						</div>
+					</div>
+					
+					<!-- Event 3-->
+					<div class="col-6 col-md-4 col-xl-3">
+						<a href="#">
+							<img src="img/event-3.png" alt="Event 3" class="img-fluid">
+						</a>
+						<div class="related-event-details">
+							<a href="#" class="no-underline">
+								<span class="brand-white">Event 3</span><br>
+								<span class="brand-yellow">Location 3</span><br>
+								<span class="brand-burgandy">12/3/23</span>
+							</a>
+						</div>
+					</div>
+					
+					<!-- Event 4-->
+					<div class="col-6 col-md-4 col-xl-3">
+						<a href="#">
+							<img src="img/event-4.png" alt="Event 4" class="img-fluid">
+						</a>
+						<div class="related-event-details">
+							<a href="#" class="no-underline">
+								<span class="brand-white">Event 4</span><br>
+								<span class="brand-yellow">Location 4</span><br>
+								<span class="brand-burgandy">12/4/23</span>
+							</a>
+						</div>
+					</div>
+					
+					<!-- Event 5-->
+					<div class="col-6 col-md-4 col-xl-3">
+						<a href="#">
+							<img src="img/event-5.png" alt="Event 5" class="img-fluid">
+						</a>
+						<div class="related-event-details">
+							<a href="#" class="no-underline">
+								<span class="brand-white">Event 5</span><br>
+								<span class="brand-yellow">Location 5</span><br>
+								<span class="brand-burgandy">12/5/23</span>
+							</a>
+						</div>
+					</div>
+					
+					<!-- Event 6-->
+					<div class="col-6 col-md-4 col-xl-3">
+						<a href="#">
+							<img src="img/event-6.png" alt="Event 6" class="img-fluid">
+						</a>
+						<div class="related-event-details">
+							<a href="#" class="no-underline">
+								<span class="brand-white">Event 6</span><br>
+								<span class="brand-yellow">Location 6</span><br>
+								<span class="brand-burgandy">12/6/23</span>
+							</a>
+						</div>
+					</div>
+
+				</section>
+
+
+		<!-- "I'm interested in" Row -->
+ 
+		<!-- "Footer -->
+			<footer class="row text-center pt-6 pb-3">
+				<div class="col ">
+					<hr class="text-white-80">
+					<p class="text-white-50 px-6">© 2023 B.C. Event Star. All events are property of their respective owners. We make no guarantee of the accuracy of event information. All info is subject to change. Lots more legal jargon. Good luck, have fun. Made in NYC. <a href="#" class="text-white-50">Privacy Policy</a>.</p>
+				</div>
+			</footer>
+		</div>
+		
 	<!-- JavaScript at end of file -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	
-	<script src="js/main.js" type="text/javascript"></script>
+	<!--<script src="js/your-events.js" type="text/javascript"></script>-->
 </body>
 </html>
