@@ -14,7 +14,7 @@ function addEvents(section, list) {
 }
 
 function removeEvents(section) {
-	// Remove all elements except the filterButtons from the page
+	// Remove all elements except the header from the section
 	let container = document.getElementById(section);
 	let toRemove = [];
 	for (const child of container.children) {
@@ -24,7 +24,7 @@ function removeEvents(section) {
 }
 
 // Main
-// Populate the list with all events from the allEventsList global
+// Populate the list with events the user is going to or is interested in
 
 var goingEventsList = [ 1, 2 ];
 var interestedEventsList = [ 5, 7 ];
