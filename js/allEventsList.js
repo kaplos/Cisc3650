@@ -4,20 +4,6 @@
 
 "use strict";
 
-// Object Class "Event"
-class Event {
-	constructor(identifier, title, location, date, imageFile, description, eventTypes, relatedEvents) {
-		this.identifier = identifier;
-		this.title = title;
-		this.location = location;
-		this.date = date;
-		this.imageFile = imageFile;
-		this.description = description;
-		this.eventTypes = eventTypes;
-		this.relatedEvents = relatedEvents;
-	}
-}
-
 // Globals
 var allEventsList = []; // array of Event objects
 
