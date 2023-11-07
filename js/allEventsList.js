@@ -91,7 +91,7 @@ allEventsList.push(new Event(
 	"148 Ingersoll Hall", // location
 	"2/24/24", // date
 	"event-8.png", // imageFile
-	"Brooklyn College students come down to 148 Ingersoll Hall to attend a presentation held by experienced software developers in the industry to hear about there experiences and possible advice to building up your resume. These lectures will involve developers from companies such as Google, Meta, Twitter, and many more. We will also host a small workshop on how to build a portfolio and your resume to prepare you for the job hunt. This event is free of charge. We hope to see you there!", // description
+	"Brooklyn College students come down to 148 Ingersoll Hall to attend a presentation held by experienced software developers in the industry to hear about their experiences and possible advice to building up your resume. These lectures will involve developers from companies such as Google, Meta, Twitter, and many more. We will also host a small workshop on how to build a portfolio and your resume to prepare you for the job hunt. This event is free of charge. We hope to see you there!", // description
 	["recruiting"], // eventTypes
 	[7, 5] // relatedEvents
 ));
