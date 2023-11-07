@@ -30,5 +30,5 @@ function addDetails() {
 }
 
 // Main
-// Populate the list with events from the allEventsList global
+// Set the image and text using data from the event with the matching ID 
 addDetails();
