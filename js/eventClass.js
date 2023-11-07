@@ -47,17 +47,17 @@ class Event {
 		const title = document.createElement("div");
 		title.className = "brand-white my-0";
 		title.appendChild(document.createTextNode(this.title));
-		details.appendChild(title);
+		detailsAnchor.appendChild(title);
 		
 		const location = document.createElement("div");
 		location.className = "brand-yellow my-0";
 		location.appendChild(document.createTextNode(this.location));
-		details.appendChild(location);
+		detailsAnchor.appendChild(location);
 		
 		const date = document.createElement("div");
 		date.className = "brand-burgandy my-0";
 		date.appendChild(document.createTextNode(this.date));
-		details.appendChild(date);
+		detailsAnchor.appendChild(date);
 		
 		return container;
 	}

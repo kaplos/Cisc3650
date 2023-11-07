@@ -25,7 +25,6 @@ function removeEvents(section) {
 
 // Main
 // Populate the list with all events from the allEventsList global
-//addEvents(null);
 
 var goingEventsList = [ 1, 2 ];
 var interestedEventsList = [ 5, 7 ];
