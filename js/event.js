@@ -4,10 +4,14 @@
 
 "use strict";
 
-function addDetails() {
+function eventID() {
 	// Get the event id from the URL
 	const parameters = new URLSearchParams(window.location.search);
-	const id = parameters.get("id");
+	return parseInt(parameters.get("id"));
+}
+
+function addDetails() {
+	const id = eventID();
 	const event = allEventsList.find(x => (x.identifier == id));
 	if (event == null) return;
 	
@@ -29,13 +33,20 @@ function addDetails() {
 	});
 	
 	// Update the buttons based on the Interested and Going lists
-	if (interestedEvents.includes(event.identifier)) setCheckbox("interested", true);
-	if (goingEvents.includes(event.identifier)) setCheckbox("going", true);
+	if (interestedEvents.includes(id)) setCheckbox("interested", true);
+	if (goingEvents.includes(id)) setCheckbox("going", true);
 	
 }
 
 function setCheckbox(prefix, state) {
 	document.getElementById(prefix+"Checkmark").src = "img/checkbox-"+(state? "on":"off")+"@2x.png";
+}
+
+function removeIdFromList(id, list) {
+	const index = list.indexOf(id);
+	if (index > -1) {
+		list.splice(index, 1);
+	}
 }
 
 // Main
@@ -44,9 +55,23 @@ addDetails();
 
 // Add event listeners
 document.getElementById("interestedButton").addEventListener('click', ({target}) => {
-	setCheckbox("interested", true);
+	const id = eventID();
+	if (interestedEvents.includes(id)) {
+		setCheckbox("interested", false);
+		removeIdFromList(id, interestedEvents);
+	} else {
+		setCheckbox("interested", true);
+		interestedEvents.push(id);
+	}
 });
 
 document.getElementById("goingButton").addEventListener('click', ({target}) => {
-	setCheckbox("going", true);
+	const id = eventID();
+	if (goingEvents.includes(id)) {
+		setCheckbox("going", false);
+		removeIdFromList(id, goingEvents);
+	} else {
+		setCheckbox("going", true);
+		goingEvents.push(id);
+	}
 });
