@@ -1,29 +1,34 @@
 .brand-nav-yellow {
-    color: #FAB63D;
+	color: #FAB63D;
 }
 
 .brand-nav-yellow a {
-    color: #FAB63D;
-    text-decoration: underline;
+	color: #FAB63D;
+	text-decoration: underline;
 }
 
 .brand-yellow {
-    color: #FAB63D;
+	color: #FAB63D;
 }
 
 .brand-burgandy {
-    color: #D70454;
+	color: #D70454;
 }
 
 .brand-burgandy a {
-    color: #D70454;
-    text-decoration: underline;
+	color: #D70454;
+	text-decoration: underline;
 }
 
 .brand-white {
-    color: #FFF;
+	color: #FFF;
 }
 
 .no-underline {
-    text-decoration: none;    
+	text-decoration: none;	
+}
+
+.checkboxImg {
+	width: 36px;
+	height: 28px;
 }

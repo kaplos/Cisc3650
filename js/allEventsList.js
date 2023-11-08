@@ -6,6 +6,8 @@
 
 // Globals
 var allEventsList = []; // array of Event objects
+var goingEvents = [1, 2]; // array of identifiers of events that user has selected "I'm interested"
+var interestedEvents = [5, 8]; // array of identifiers of events that user has selected "I'm going"
 
 // Set up allEventsList
 allEventsList.push(new Event(

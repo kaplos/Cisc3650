@@ -38,5 +38,4 @@ document.getElementById("filterButtonGroup").addEventListener('click', ({target}
 		removeEvents();
 		addEvents(filterBy);
 	}
-	
 });

@@ -26,9 +26,6 @@ function removeEvents(section) {
 // Main
 // Populate the list with events the user is going to or is interested in
 
-var goingEventsList = [ 1, 2 ];
-var interestedEventsList = [ 5, 7 ];
-
-addEvents("goingSection", goingEventsList);
-addEvents("interestedSection", interestedEventsList);
+addEvents("goingSection", goingEvents);
+addEvents("interestedSection", interestedEvents);
 

@@ -7,8 +7,8 @@
 function addDetails() {
 	// Get the event id from the URL
 	const parameters = new URLSearchParams(window.location.search);
-	const index = parameters.get("id");
-	const event = allEventsList.find(x => (x.identifier == index));
+	const id = parameters.get("id");
+	const event = allEventsList.find(x => (x.identifier == id));
 	if (event == null) return;
 	
 	// Image
@@ -23,12 +23,30 @@ function addDetails() {
 	// Related Events
 	const relatedSection = document.getElementById("relatedEventsSection");
 	
-	event.relatedEvents.forEach((identifier, index) => {
+	event.relatedEvents.forEach((identifier, id) => {
 		const relatedEvent = allEventsList.find(x => (x.identifier == identifier));
 		relatedSection.appendChild(relatedEvent.createDiv(false));
 	});
+	
+	// Update the buttons based on the Interested and Going lists
+	if (interestedEvents.includes(event.identifier)) setCheckbox("interested", true);
+	if (goingEvents.includes(event.identifier)) setCheckbox("going", true);
+	
+}
+
+function setCheckbox(prefix, state) {
+	document.getElementById(prefix+"Checkmark").src = "img/checkbox-"+(state? "on":"off")+"@2x.png";
 }
 
 // Main
 // Set the image and text using data from the event with the matching ID 
 addDetails();
+
+// Add event listeners
+document.getElementById("interestedButton").addEventListener('click', ({target}) => {
+	setCheckbox("interested", true);
+});
+
+document.getElementById("goingButton").addEventListener('click', ({target}) => {
+	setCheckbox("going", true);
+});
