@@ -35,7 +35,6 @@ function addDetails() {
 	// Update the buttons based on the Interested and Going lists
 	if (interestedEvents.includes(id)) setCheckbox("interested", true);
 	if (goingEvents.includes(id)) setCheckbox("going", true);
-	
 }
 
 function setCheckbox(prefix, state) {
@@ -50,6 +49,10 @@ function removeIdFromList(id, list) {
 }
 
 // Main
+
+// Load the I'm Interested/Going data from localStorage
+loadEventsFromLocalStorage();
+
 // Set the image and text using data from the event with the matching ID 
 addDetails();
 
@@ -63,6 +66,9 @@ document.getElementById("interestedButton").addEventListener('click', ({target})
 		setCheckbox("interested", true);
 		interestedEvents.push(id);
 	}
+	
+	// Save changes to localStorage
+	saveEventsToLocalStorage();
 });
 
 document.getElementById("goingButton").addEventListener('click', ({target}) => {
@@ -74,4 +80,7 @@ document.getElementById("goingButton").addEventListener('click', ({target}) => {
 		setCheckbox("going", true);
 		goingEvents.push(id);
 	}
+	
+	// Save changes to localStorage
+	saveEventsToLocalStorage();
 });

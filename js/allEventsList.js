@@ -9,6 +9,8 @@ var allEventsList = []; // array of Event objects
 var goingEvents = [1, 2]; // array of identifiers of events that user has selected "I'm interested"
 var interestedEvents = [5, 8]; // array of identifiers of events that user has selected "I'm going"
 
+
+
 // Set up allEventsList
 allEventsList.push(new Event(
 	1, // identifier
@@ -98,3 +100,25 @@ allEventsList.push(new Event(
 	[7, 5] // relatedEvents
 ));
 
+
+
+// Functions for loading and saving the Interested and Going lists to localStorage
+
+function loadEventsFromLocalStorage() {
+	//console.log("Loading event data from local storage.");
+	
+	if (localStorage.getItem("eventboardGoingEvents")) {
+		goingEvents = JSON.parse(localStorage.getItem("eventboardGoingEvents"));
+	}
+
+	if (localStorage.getItem("eventboardInterestedEvents")) {
+		interestedEvents = JSON.parse(localStorage.getItem("eventboardInterestedEvents"));
+	}
+}
+
+function saveEventsToLocalStorage() {
+	//console.log("Saving event data to local storage.");
+	
+	localStorage.setItem("eventboardGoingEvents", JSON.stringify(goingEvents));
+	localStorage.setItem("eventboardInterestedEvents", JSON.stringify(interestedEvents));
+}

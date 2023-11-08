@@ -25,7 +25,7 @@ function removeEvents(section) {
 
 // Main
 // Populate the list with events the user is going to or is interested in
-
+loadEventsFromLocalStorage();
 addEvents("goingSection", goingEvents);
 addEvents("interestedSection", interestedEvents);
 
