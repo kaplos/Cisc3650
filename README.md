@@ -12,7 +12,7 @@ This website only presents the front-end functionality, with a simulated back-en
 
 ## Website Link
 
-The website can be found at on [Github Pages](https://kaplos.github.io/Eventboard/)
+The website can be found on [Github Pages](https://kaplos.github.io/Eventboard/)
 
 
 
