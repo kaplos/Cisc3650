@@ -109,10 +109,14 @@ function loadEventsFromLocalStorage() {
 	
 	if (localStorage.getItem("eventboardGoingEvents")) {
 		goingEvents = JSON.parse(localStorage.getItem("eventboardGoingEvents"));
+	} else {
+		console.log("eventboardGoingEvents is not in localStorage.");
 	}
 
 	if (localStorage.getItem("eventboardInterestedEvents")) {
 		interestedEvents = JSON.parse(localStorage.getItem("eventboardInterestedEvents"));
+	} else {
+		console.log("eventboardInterestedEvents is not in localStorage.");
 	}
 }
 
