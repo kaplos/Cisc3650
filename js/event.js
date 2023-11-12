@@ -49,8 +49,16 @@ function removeIdFromList(id, list) {
 }
 
 function showMapModal() {
+	// Set up modal
+	const id = eventID();
+	const event = allEventsList.find(x => (x.identifier == id));
+	if (event) {
+		const title = document.getElementById("mapModalTitle");
+		title.innerText = event.location;
+	}
+	
 	// Create and show the modal
-	let modal = new bootstrap.Modal(document.getElementById('mapModal'));
+	const modal = new bootstrap.Modal(document.getElementById('mapModal'));
 	modal.show();
 }
 
