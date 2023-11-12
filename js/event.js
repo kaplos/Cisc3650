@@ -48,6 +48,12 @@ function removeIdFromList(id, list) {
 	}
 }
 
+function showMapModal() {
+	// Create and show the modal
+	let modal = new bootstrap.Modal(document.getElementById('mapModal'));
+	modal.show();
+}
+
 // Main
 
 // Load the I'm Interested/Going data from localStorage
@@ -56,7 +62,15 @@ loadEventsFromLocalStorage();
 // Set the image and text using data from the event with the matching ID 
 addDetails();
 
-// Add event listeners
+/* ! Event Listeners */
+
+// Location modal
+document.getElementById("eventLocation").addEventListener('click', (event) => {
+	const id = eventID();
+	showMapModal();
+});
+
+// Interested button
 document.getElementById("interestedButton").addEventListener('click', ({target}) => {
 	const id = eventID();
 	if (interestedEvents.includes(id)) {
@@ -71,6 +85,7 @@ document.getElementById("interestedButton").addEventListener('click', ({target})
 	saveEventsToLocalStorage();
 });
 
+// Going button
 document.getElementById("goingButton").addEventListener('click', ({target}) => {
 	const id = eventID();
 	if (goingEvents.includes(id)) {

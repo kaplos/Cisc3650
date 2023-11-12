@@ -12,7 +12,7 @@ var interestedEvents = [5, 8]; // array of identifiers of events that user has s
 
 
 // Set up allEventsList
-allEventsList.push(new Event(
+allEventsList.push(new BCEvent(
 	1, // identifier
 	"B.C. Halloween Party", // title
 	"Student Center, Penthouse 7th floor", // location
@@ -23,7 +23,7 @@ allEventsList.push(new Event(
 	[6, 2] // relatedEvents
 ));
 
-allEventsList.push(new Event(
+allEventsList.push(new BCEvent(
 	2, // identifier
 	"Murder Mystery", // title
 	"3111 James Hall", // location
@@ -34,7 +34,7 @@ allEventsList.push(new Event(
 	[6, 1] // relatedEvents
 ));
 
-allEventsList.push(new Event(
+allEventsList.push(new BCEvent(
 	3, // identifier
 	"Electro-acoustic Music Festival", // title
 	"Topfer Rehearsal Studio", // location
@@ -45,7 +45,7 @@ allEventsList.push(new Event(
 	[6, 1] // relatedEvents
 ));
 
-allEventsList.push(new Event(
+allEventsList.push(new BCEvent(
 	4, // identifier
 	"Afternoons at the Piano 2", // title
 	"Topfer Rehearsal Studio", // location
@@ -56,7 +56,7 @@ allEventsList.push(new Event(
 	[6, 1] // relatedEvents
 ));
 
-allEventsList.push(new Event(
+allEventsList.push(new BCEvent(
 	5, // identifier
 	"El Huracán", // title
 	"Don Buchwald Theater", // location
@@ -67,7 +67,7 @@ allEventsList.push(new Event(
 	[6, 2] // relatedEvents
 ));
 
-allEventsList.push(new Event(
+allEventsList.push(new BCEvent(
 	6, // identifier
 	"Eurydice", // title
 	"New Workshop Theater", // location
@@ -78,7 +78,7 @@ allEventsList.push(new Event(
 	[5, 1] // relatedEvents
 ));
 
-allEventsList.push(new Event(
+allEventsList.push(new BCEvent(
 	7, // identifier
 	"BC Job Fair", // title
 	"Student Center", // location
@@ -89,7 +89,7 @@ allEventsList.push(new Event(
 	[8, 2] // relatedEvents
 ));
 
-allEventsList.push(new Event(
+allEventsList.push(new BCEvent(
 	8, // identifier
 	"Software Development Speaker", // title
 	"148 Ingersoll Hall", // location

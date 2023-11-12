@@ -4,8 +4,8 @@
 
 "use strict";
 
-// Object Class "Event"
-class Event {
+// Object Class "BCEvent"
+class BCEvent {
 	constructor(identifier, title, location, date, imageFile, description, eventTypes, relatedEvents) {
 		this.identifier = identifier;
 		this.title = title;
