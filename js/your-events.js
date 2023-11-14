@@ -10,7 +10,22 @@ function addEvents(section, list) {
 	// Add events
 	list.forEach((identifier, index) => {
 		const event = allEventsList.find(x => (x.identifier == identifier));
-		if (event) container.appendChild(event.createDiv(true));
+		if (event){ 
+			let eventDiv = event.createDiv(true);
+			container.appendChild(eventDiv);
+			let removeButton = document.createElement('button');
+			removeButton.textContent = 'Remove';
+			removeButton.style.display = 'none'; // Hide button initially
+			eventDiv.appendChild(removeButton);
+
+			// Show remove button on mouseover
+			eventDiv.addEventListener('mouseover', function() {
+				removeButton.style.display = 'block';
+			});
+			eventDiv.addEventListener('mouseout', function() {
+				removeButton.style.display = 'none';
+			});
+			}
 	});
 	
 	// Hide placeholder
@@ -33,4 +48,10 @@ function removeEvents(section) {
 loadEventsFromLocalStorage();
 addEvents("going", goingEvents);
 addEvents("interested", interestedEvents);
+
+function addEventListener(){
+	removeButton.addEventListener("click",(event)=>{
+		
+	});
+}
 

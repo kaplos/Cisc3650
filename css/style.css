@@ -32,3 +32,19 @@
 	width: 36px;
 	height: 28px;
 }
+
+/* create a event styling */
+.error{
+	border: 2px solid red;
+}
+#dateTime{
+	
+	display:flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.nav-link{
+	color: FAB63D;
+}
+
+/* your-events css */
