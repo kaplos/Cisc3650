@@ -17,15 +17,18 @@ function addEvents(section, list) {
 			removeButton.textContent = 'Remove';
 			removeButton.style.display = 'none'; // Hide button initially
 			eventDiv.appendChild(removeButton);
-
+		}
 			// Show remove button on mouseover
-			eventDiv.addEventListener('mouseover', function() {
+			/*eventDiv.addEventListener('mouseover', function() {
 				removeButton.style.display = 'block';
 			});
 			eventDiv.addEventListener('mouseout', function() {
 				removeButton.style.display = 'none';
 			});
-			}
+			}*/
+
+
+			// make sure to remove the { from above if your uncomenting 
 	});
 	
 	// Hide placeholder
