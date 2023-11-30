@@ -1,18 +1,31 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.nav-item{
+	font-weight: 500;
+	font-size: 16px;
+
+}
+
 .brand-nav-yellow {
 	color: #FAB63D;
 }
 
 .brand-nav-yellow a {
 	color: #FAB63D;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .brand-yellow {
 	color: #FAB63D;
+	font-size: 14px;
+	
 }
 
 .brand-burgandy {
 	color: #D70454;
+	font-size: 12px;
+	font-style: italic;
 }
 
 .brand-burgandy a {
@@ -49,6 +62,19 @@
 
 .nav-link:hover{
 	color:#D70454;
+}
+
+#filterButtons{
+	margin-top:100px;
+	margin-bottom: 50px;
+	font-weight: 300;
+}
+
+.col{
+
+	font-weight: 100;
+	font-size: smaller;
+
 }
 
 
