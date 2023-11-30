@@ -78,5 +78,29 @@ body{
 }
 
 
-
 /* your-events css */
+.YourEventsHeader{
+	font-size:30px;
+	font-weight: 500;
+	margin-top: 50px;
+   }
+.line-seperator{
+	height: 1px;
+	background-color: #FFF;
+	max-width: auto;
+	margin-bottom: 30px;
+
+}
+   
+.goingTo{
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 100;
+   
+   }
+.interestedIn{
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 100;
+
+   }
