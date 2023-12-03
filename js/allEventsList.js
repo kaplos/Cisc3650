@@ -27,7 +27,7 @@ allEventsList.push(new BCEvent(
 	2, // identifier
 	"Murder Mystery", // title
 	"3111 James Hall", // location
-	"11/7/23, 6:00pm", // date
+	"11/7/23", // date
 	"event-2.png", // imageFile
 	"Brooklyn College students come to the murder mystery hosted by the Anthropology club and learn how to investigate the culprit of the murder. All students are welcome and no prior experience is needed to participate. Anthropology club members will guide you through the procedure to participate in the murder mystery and then you will be able to solve a mystery by yourself. All drinks and food will be free of charge so get your detective cap on and come by for a thrilling adventure.", // description
 	["club"], // eventTypes
