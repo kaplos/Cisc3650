@@ -10,6 +10,9 @@ body{
 	font-size: 16px;
 
 }
+.nav-link:hover{
+	color:#D70454;
+}
 
 .brand-nav-yellow a {
     color: #FAB63D;
