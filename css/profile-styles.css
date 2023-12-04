@@ -1,14 +1,30 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.topNav{
+    margin-bottom: 120px;
+}
 .brand-nav-yellow {
     color: #FAB63D;
+    font-weight: 500;
+	font-size: 16px;
+
 }
 
 .brand-nav-yellow a {
     color: #FAB63D;
-    text-decoration: underline;
+    text-decoration: none;
 
 }
+
+.mt-5{
+    font-weight: 100;
+}
+
 .editable{
     cursor: text;
+    line-height: 180%;
+
 }
 
 
