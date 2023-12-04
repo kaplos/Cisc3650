@@ -7,6 +7,10 @@ body{
 
 }
 
+.topNav{
+    margin-bottom: 100px;
+}
+
 .brand-nav-yellow {
 	color: #FAB63D;
 }
@@ -101,5 +105,24 @@ body{
 	font-size: 24px;
 	font-style: italic;
 	font-weight: 100;
-
    }
+
+/* create-an-events css */
+.form-container{
+	background-color: black;
+	padding: 30px;
+	max-width: 800px;
+	border-radius: 20px;
+	margin: auto ;
+	margin-bottom: 100px;
+
+}
+
+.createHeader{
+	font-weight: 100;
+}
+
+.form-label{
+	font-weight: 100;
+}
+
