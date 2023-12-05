@@ -109,7 +109,7 @@ body{
 
 /* create-an-events css */
 .form-container{
-	background-color: black;
+	background-color: rgb(0, 0, 0,0.5);
 	padding: 30px;
 	max-width: 800px;
 	border-radius: 20px;
@@ -121,6 +121,26 @@ body{
 .createHeader{
 	font-weight: 100;
 }
+
+/* event page css */
+#eventLocation{
+	font-size: 18px;
+	text-decoration: none;
+}
+
+#eventDate{
+	font-size: 18px;
+}
+
+#eventDescription{
+	line-height: 180%;
+	font-weight: 400;
+}
+
+h3{
+	font-weight:100;
+}
+
 
 .form-label{
 	font-weight: 100;
