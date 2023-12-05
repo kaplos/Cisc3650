@@ -28,7 +28,11 @@ class BCEvent {
 		
 		const imageAnchor = document.createElement("a");
 		imageAnchor.href = eventLink;
+		imageAnchor.className = "ratio ratio-1x1";
 		container.appendChild(imageAnchor);
+		
+		// const imageDiv = document.createElement("div");
+		// imageAnchor.appendChild(imageDiv);
 		
 		const image = document.createElement("img");
 		image.src = "img/"+this.imageFile;
