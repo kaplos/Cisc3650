@@ -27,6 +27,9 @@ body{
 .editable{
     cursor: text;
     line-height: 180%;
+    background-color: white;
+    color: red;
+    margin-bottom: 10px;
 
 }
 
