@@ -125,7 +125,7 @@ body{
 /* event page css */
 #eventLocation{
 	font-size: 18px;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 #eventDate{
